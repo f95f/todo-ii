@@ -1,0 +1,17 @@
+@mixin primitives {
+  /* Primitive color tokens */
+  --color-accent-400: #fcc22a;
+
+  --color-grey-900: #0d0d0d;
+  --color-grey-700: #5b7581;
+  --color-grey-500: #c4c3bf;
+  --color-grey-300: #e5e1de;
+  --color-grey-100: #fff9ea;
+
+  /* Primitive overlays */
+  --color-overlay-shadow: #5b758142;
+  --color-overlay-light: #fff9ea66;
+
+  /* Core sizing primitives */
+  --size-grid: 200px;
+}

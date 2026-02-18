@@ -1,0 +1,127 @@
+/* .item-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    padding: 1em 1.6em;
+    margin: 1em 0;
+    background-color: var(--grey-300);
+    border-radius: 3em;
+    box-shadow: 
+            3px 3px 6px #3333,
+            -2px -2px 4px #fff; 
+ 
+    transition: all .2s ease;
+} */
+
+.elevated-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+p.description {
+    font-family: 'Quicksand', Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--grey-900);
+}
+
+
+.checkbox-container {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+.checkbox-container:disabled {
+    cursor: not-allowed;
+}
+  
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    width: 2em;
+    height: 2em;
+    border-radius: 4px;
+    transform: translateY(-0.075em);
+    display: grid;
+    cursor: pointer;
+    outline: unset;
+    place-content: center;
+    transition: all .2s ease;
+    box-shadow: 
+    inset   -2px -2px 4px #fff8,
+    inset   2px 2px 4px #3333; 
+}
+  
+input[type="checkbox"]::before {
+    content: "";
+    width: 1.6em;
+    height: 1.6em;
+    clip-path: polygon(10% 49%, 45% 89%, 94% 10%, 43% 67%);
+    opacity: .6;
+    background-color: var(--dark);
+    transition: all .2s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    opacity: 1;
+    background-color: var(--light);
+}
+input[type="checkbox"]:checked {
+    background-color: var(--accent);
+    box-shadow: 
+        2px 2px 4px #3333,
+        -2px -2px 4px #fff8,
+    inset 2px 2px 8px #3333,
+    inset -2px -2px 8px #fff6;
+}
+  
+input[type="checkbox"]:focus {
+    outline: 1px solid var(--accent);
+}
+  
+input[type="checkbox"]:disabled {
+    cursor: not-allowed;
+}
+
+
+.left, .right{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.sunken, .sunken:hover{
+    box-shadow:
+            -2px -2px 4px #fff8,
+            2px 2px 4px #3333,
+    inset   -2px -2px 4px #fff8,
+    inset   2px 2px 4px #3333;
+}
+
+.actions-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 12px;
+}
+
+hr.vertical-separator {
+    margin: 0 8px;
+}
+
+small {
+    font-size: .8em;
+}
+/* 
+a.inline-button span {
+    transition: all .2s ease;
+}
+a.inline-button:hover span {
+    text-shadow: 0px 0px 8px var(--accent);
+} */

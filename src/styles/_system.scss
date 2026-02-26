@@ -1,0 +1,113 @@
+.test-bed {
+  // min-height: 240px;
+  padding: 60px;
+  // outline: 2px solid red;
+  display: flex;
+  gap: 48px;
+
+}
+
+.test-subject {
+  width: 80px;
+  aspect-ratio: 1 / 1;
+  
+}
+
+.elevated {
+  background-color: var(--color-grey-300);
+  border-radius: var(--radius-md);
+  --surface-shadow: var(--elevation-md);
+  --accent-glow: var(--glow-accent-md);
+  box-shadow: var(--surface-shadow);
+
+  &-xs {
+    --surface-shadow: var(--elevation-xs);
+    --accent-glow: var(--glow-accent-xs);
+    box-shadow: var(--surface-shadow);
+  }
+
+  &-sm {
+    --surface-shadow: var(--elevation-sm);
+    --accent-glow: var(--glow-accent-sm);
+    box-shadow: var(--surface-shadow);
+  }
+
+  &-md {
+    --surface-shadow: var(--elevation-md);
+    --accent-glow: var(--glow-accent-md);
+    box-shadow: var(--surface-shadow);
+  }
+
+  &-lg {
+    --surface-shadow: var(--elevation-lg);
+    --accent-glow: var(--glow-accent-lg);
+    box-shadow: var(--surface-shadow);
+  }
+
+  &-xl {
+    --surface-shadow: var(--elevation-xl);
+    --accent-glow: var(--glow-accent-xl);
+    box-shadow: var(--surface-shadow);
+  }
+  
+}
+
+.inset {
+  background-color: var(--color-grey-300);
+  border-radius: var(--radius-md);
+  --surface-shadow: var(--inset-md);
+  --accent-glow: var(--glow-accent-inset-md);
+  box-shadow: var(--surface-shadow);
+
+  &-xs {
+    background-color: var(--color-grey-300);
+    --surface-shadow: var(--inset-xs);
+    --accent-glow: var(--glow-accent-inset-xs);
+    box-shadow: var(--surface-shadow);
+  }
+
+  &-sm {
+    background-color: var(--color-grey-300);
+    --surface-shadow: var(--inset-sm);
+    --accent-glow: var(--glow-accent-inset-sm);
+    box-shadow: var(--surface-shadow);
+  }
+
+  &-md {
+    background-color: var(--color-grey-400);
+    --surface-shadow: var(--inset-md);
+    --accent-glow: var(--glow-accent-inset-md);
+    box-shadow: var(--surface-shadow);
+  }
+
+  &-lg {
+    background-color: var(--color-grey-500);
+    --surface-shadow: var(--inset-lg);
+    --accent-glow: var(--glow-accent-inset-lg);
+    box-shadow: var(--surface-shadow);
+  }
+  
+}
+
+
+.circle {
+  border-radius: var(--radius-full);
+}
+
+.glowing {
+  border: 1px solid var(--color-accent-400);
+}
+
+.elevated.glowing,
+.inset.glowing,
+.elevated-xs.glowing,
+.elevated-sm.glowing,
+.elevated-md.glowing,
+.elevated-lg.glowing,
+.elevated-xl.glowing,
+.inset-xs.glowing,
+.inset-sm.glowing,
+.inset-md.glowing,
+.inset-lg.glowing {
+  box-shadow: var(--surface-shadow), var(--accent-glow);
+}

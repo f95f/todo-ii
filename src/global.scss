@@ -25,6 +25,9 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+@import "./styles/_primitives.scss";
+@import "./styles/_system.scss";
+
 /**
  * Ionic Dark Mode
  * -----------------------------------------------------
@@ -36,21 +39,24 @@
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
 
+
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Quicksand:wght@300;400&display=swap');
 
 :root{
-    --accent: #FCC22A;
+    @include primitives;
 
-    --grey-900: #0D0D0D;
-    --grey-700: #5B7581;
-    --grey-500: #C4C3BF;
-    --grey-300: #E5E1DE;
-    --grey-100: #FFF9EA;
+    --accent: var(--color-accent-400);
 
-    --shadow: #5B758142;
-    --light: #FFF9EA66;
+    --grey-900: var(--color-grey-900);
+    --grey-700: var(--color-grey-700);
+    --grey-500: var(--color-grey-500);
+    --grey-300: var(--color-grey-300);
+    --grey-100: var(--color-grey-100);
 
-    --grid-size: 200px;
+    --shadow: var(--color-overlay-shadow);
+    --light: var(--color-overlay-light);
+
+    --grid-size: var(--size-grid);
 
 }
 

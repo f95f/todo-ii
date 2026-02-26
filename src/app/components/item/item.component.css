@@ -99,9 +99,9 @@ input[type="checkbox"]:disabled {
 .sunken, .sunken:hover{
     box-shadow:
             -2px -2px 4px #fff8,
-            2px 2px 4px #3333,
-    inset   -2px -2px 4px #fff8,
-    inset   2px 2px 4px #3333;
+            2px 2px 4px #3333;
+    /* inset   -2px -2px 4px #fff8,
+    inset   2px 2px 4px #3333; */
 }
 
 .actions-container{

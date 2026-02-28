@@ -32,8 +32,12 @@
   --size-grid: 200px;
 
   // radius
-  --radius-md: 8px;
   --radius-full: 9999px;
+  --radius-xl: 32px;
+  --radius-lg: 16px;
+  --radius-md: 8px;
+  --radius-sm: 4px;
+  --radius-sx: 2px;
 
   // shadows
   --elevation-xs:
@@ -85,6 +89,47 @@
       28px 28px 28px var(--color-overlay-shadow),
     inset 1px 1px 1px var(--color-overlay-light),
     inset -1px -1px 1px var(--color-overlay-shadow);
+  
+  
+  --floating-xs:
+    -1px -1px 1px var(--color-overlay-light),
+    -2px -2px 2px var(--color-overlay-light),
+    2px -4px 4px var(--color-overlay-light),
+    1px 1px 1px var(--color-overlay-shadow),
+    2px 2px 2px var(--color-overlay-shadow),
+    4px 4px 4px var(--color-overlay-shadow);
+
+  --floating-sm:
+    -2px -2px 2px var(--color-overlay-light),
+    -4px -4px 4px var(--color-overlay-light),
+    4px -6px 6px var(--color-overlay-light),
+    2px 2px 2px var(--color-overlay-shadow),
+    4px 4px 4px var(--color-overlay-shadow),
+    6px 6px 6px var(--color-overlay-shadow);
+
+  --floating-md: 
+      -4px -4px 4px var(--color-overlay-light),
+      -8px -8px 8px var(--color-overlay-light),
+      8px -12px 12px var(--color-overlay-light),
+      4px 4px 4px var(--color-overlay-shadow),
+      8px 8px 8px var(--color-overlay-shadow),
+      12px 12px 12px var(--color-overlay-shadow);
+
+  --floating-lg:
+      -6px -6px 6px var(--color-overlay-light),
+      -12px -12px 12px var(--color-overlay-light),
+      12px -18px 18px var(--color-overlay-light),
+      6px 6px 6px var(--color-overlay-shadow),
+      12px 12px 12px var(--color-overlay-shadow),
+      18px 18px 18px var(--color-overlay-shadow);
+
+  --floating-xl:
+      -8px -8px 8px var(--color-overlay-light),
+      -16px -16px 16px var(--color-overlay-light),
+      16px -24px 24px var(--color-overlay-light),
+      8px 8px 8px var(--color-overlay-shadow),
+      16px 16px 16px var(--color-overlay-shadow),
+      28px 28px 28px var(--color-overlay-shadow);
 
     
 

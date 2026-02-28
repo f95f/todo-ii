@@ -52,6 +52,45 @@
   
 }
 
+.floating {
+  background-color: var(--color-grey-300);
+  border-radius: var(--radius-xs);
+  --surface-shadow: var(--floating-md);
+  --accent-glow: var(--glow-accent-md);
+  box-shadow: var(--surface-shadow);
+
+  &-xs {
+    --surface-shadow: var(--floating-xs);
+    --accent-glow: var(--glow-accent-xs);
+    box-shadow: var(--surface-shadow);
+  }
+
+  &-sm {
+    --surface-shadow: var(--floating-sm);
+    --accent-glow: var(--glow-accent-sm);
+    box-shadow: var(--surface-shadow);
+  }
+
+  &-md {
+    --surface-shadow: var(--floating-md);
+    --accent-glow: var(--glow-accent-md);
+    box-shadow: var(--surface-shadow);
+  }
+
+  &-lg {
+    --surface-shadow: var(--floating-lg);
+    --accent-glow: var(--glow-accent-lg);
+    box-shadow: var(--surface-shadow);
+  }
+
+  &-xl {
+    --surface-shadow: var(--floating-xl);
+    --accent-glow: var(--glow-accent-xl);
+    box-shadow: var(--surface-shadow);
+  }
+  
+}
+
 .inset {
   background-color: var(--color-grey-300);
   border-radius: var(--radius-md);
@@ -105,9 +144,47 @@
 .elevated-md.glowing,
 .elevated-lg.glowing,
 .elevated-xl.glowing,
+.floating-xs.glowing,
+.floating-sm.glowing,
+.floating-md.glowing,
+.floating-lg.glowing,
+.floating-xl.glowing,
 .inset-xs.glowing,
 .inset-sm.glowing,
 .inset-md.glowing,
 .inset-lg.glowing {
   box-shadow: var(--surface-shadow), var(--accent-glow);
+}
+
+.hole {
+  @extend .inset-sm;
+  background-color: var(--color-grey-900);
+}
+
+input {
+    // @extend .floating;
+    @extend .floating-sm;
+    @extend .circle;
+
+    outline: unset;
+    border: 1px solid var(--grey-300);
+    height: 3em;
+    width: 100%;
+    padding: 0 1em;
+    font-size: 1.2em;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    color: var(--grey-700);
+    background-color: var(--grey-300);
+    transition: all .2s ease;
+
+    &:hover {
+      @extend .glowing;
+    }
+
+    &:focus, &:active {
+      @extend .glowing;
+      @extend .inset-sm;
+      transition: all .2s ease;
+    }
+
 }
